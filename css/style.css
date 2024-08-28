@@ -10,3 +10,31 @@
 .product-category, .price {
     font-size: 14px;  
 }
+
+#product h1 {
+    font-size: 42px;
+}
+
+dt {
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+dd {
+    margin-left: 20px;
+}
+
+#add-to-cart {
+    background-color: #ff6347;
+    color: white;
+    padding: 1em 2em;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#add-to-cart:hover {
+    background-color: #ff8266;
+}

@@ -18,3 +18,37 @@ img {
     background-color: lightgray;
     padding: 1em;
 }
+
+.categories {
+    padding: 1em;
+    display: flex;
+    gap: 1em;
+    justify-content: center;
+}
+
+.category {
+    padding: 1em;
+    background-color: tomato;
+    width: 8em;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.category:hover {
+    background-color: lightgray;
+}
+
+#product {
+    display: grid;
+    grid-template-columns: 2fr 2fr 1fr;
+    gap: 1em;
+}
+
+.custom-properties {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 1em;
+    background-color: lightgray;
+    padding: 2em;
+}
