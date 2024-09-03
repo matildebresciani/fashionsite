@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Forside</title>
+    <title>Produktliste</title>
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/layout.css" />
   </head>
@@ -16,65 +16,22 @@
     </header>
     <main>
       <h1>Produkter</h1>
-      <section class="products">
-        <div class="product">
-          <img src="img/1533.webp" alt="" />
-          <p class="product-title">Titel</p>
-          <p class="product-category">Kategori, Mærke</p>
-          <p class="price">Pris</p>
-          <a class="read-more" href="produkt.html">Read More</a>
-        </div>
-        <div class="product">
-          <img src="img/1534.webp" alt="" />
-          <p class="product-title">Titel</p>
-          <p class="product-category">Kategori, Mærke</p>
-          <p class="price">Pris</p>
-          <a class="read-more" href="produkt.html">Read More</a>
-        </div>
-        <div class="product">
-          <img src="img/1535.webp" alt="" />
-          <p class="product-title">Titel</p>
-          <p class="product-category">Kategori, Mærke</p>
-          <p class="price">Pris</p>
-          <a class="read-more" href="produkt.html">Read More</a>
-        </div>
-        <div class="product">
-          <img src="img/1536.webp" alt="" />
-          <p class="product-title">Titel</p>
-          <p class="product-category">Kategori, Mærke</p>
-          <p class="price">Pris</p>
-          <a class="read-more" href="produkt.html">Read More</a>
-        </div>
-        <div class="product">
-          <img src="img/1533.webp" alt="" />
-          <p class="product-title">Titel</p>
-          <p class="product-category">Kategori, Mærke</p>
-          <p class="price">Pris</p>
-          <a class="read-more" href="produkt.html">Read More</a>
-        </div>
-        <div class="product">
-          <img src="img/1534.webp" alt="" />
-          <p class="product-title">Titel</p>
-          <p class="product-category">Kategori, Mærke</p>
-          <p class="price">Pris</p>
-          <a class="read-more" href="produkt.html">Read More</a>
-        </div>
-        <div class="product">
-          <img src="img/1535.webp" alt="" />
-          <p class="product-title">Titel</p>
-          <p class="product-category">Kategori, Mærke</p>
-          <p class="price">Pris</p>
-          <a class="read-more" href="produkt.html">Read More</a>
-        </div>
-        <div class="product">
-          <img src="img/1536.webp" alt="" />
-          <p class="product-title">Titel</p>
-          <p class="product-category">Kategori, Mærke</p>
-          <p class="price">Pris</p>
-          <a class="read-more" href="produkt.html">Read More</a>
-        </div>
-      </section>
+      <section class="products"></section>
+      <template>
+        <article class="product">
+          <img src="" alt="" />
+          <p class="product-title"></p>
+          <p class="product-category"></p>
+          <p><span class="price"></span> kr</p>
+          <div class="discounted">
+            <p>Now <span></span> kr</p>
+            <p><span></span> %</p>
+          </div>
+          <a class="read-more" href="">Read More</a>
+        </article>
+      </template>
     </main>
     <footer></footer>
+    <script src="javascript/produktliste.js"></script>
   </body>
 </html>

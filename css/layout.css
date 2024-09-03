@@ -8,13 +8,12 @@ img {
 }
 
 .products {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
     gap: 1em;
 }
 
 .product {
-    width: 20%; 
     background-color: lightgray;
     padding: 1em;
 }
@@ -51,4 +50,8 @@ img {
     gap: 1em;
     background-color: lightgray;
     padding: 2em;
+}
+
+.soldOut {
+    background-color: red;
 }

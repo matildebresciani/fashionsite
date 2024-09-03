@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Forside</title>
+    <title>Produkt</title>
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/layout.css" />
   </head>
@@ -17,22 +17,22 @@
     <main>
       <section id="product">
         <div class="product-image">
-          <img src="img/1533.webp" alt="" />
+          <img src="" alt="" />
         </div>
         <div class="product-information">
           <h1>Product Information</h1>
           <dl>
             <dt>Model Name</dt>
-            <dd>Puma Men's Tee</dd>
-            <dt>Color</dt>
-            <dd>Red</dd>
+            <dd class="model-name"></dd>
+            <dt>Brand</dt>
+            <dd class="brand-name"></dd>
             <dt>Inventory Number</dt>
-            <dd>1533</dd>
+            <dd class="inventory-number"></dd>
           </dl>
         </div>
         <div class="custom-properties">
-          <h1>Puma Men's Tee</h1>
-          <p>Puma, T-shirt</p>
+          <h1 class="display-name"></h1>
+          <p class="brand-name"></p>
           <div class="size">
             <select id="size" name="size">
               <option value="" disabled selected>Choose Size</option>
@@ -49,5 +49,6 @@
       </section>
     </main>
     <footer></footer>
+    <script src="javascript/produkt.js"></script>
   </body>
 </html>
