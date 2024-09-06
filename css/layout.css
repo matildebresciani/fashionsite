@@ -7,6 +7,39 @@ img {
     width: 100%;
 }
 
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+header p {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+}
+
+header ul li {
+    padding: 1em;
+}
+
+header ul li a {
+    color: black;
+    font-style: none;
+    text-decoration: none;
+    font-size: 18px;
+    border: 1px solid;
+    border-radius: 30px;
+    padding: 0.5em;
+}
+
+header ul li a:hover {
+    background-color: lightgray;
+}
+
 .products {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -16,21 +49,34 @@ img {
 .product {
     background-color: lightgray;
     padding: 1em;
-}
-
-.categories {
-    padding: 1em;
     display: flex;
-    gap: 1em;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
-.category {
+.read-more {
+    margin-top: auto;
+}
+
+#categoryList {
     padding: 1em;
+    display: grid;
+    list-style: none;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1em;
+}
+
+#categoryList li {
+    padding: 3em;
     background-color: tomato;
     width: 8em;
     text-align: center;
     border-radius: 5px;
+}
+
+#categoryList a {
+    color: white;
+    font-size: 18px;
 }
 
 .category:hover {
@@ -52,6 +98,46 @@ img {
     padding: 2em;
 }
 
-.soldOut {
+.udsolgt {
+    display: none;
+}
+
+.udsolgt p {
+    border: solid 1px;
+    border-radius: 5px;
+    padding: 1em;
+    font-size: 16px;
+    text-align: center;
     background-color: red;
 }
+
+/* .soldOut {
+    opacity: 60%;
+} */
+
+
+/* .soldOut p {
+    border: solid 1px;
+    border-radius: 5px;
+    padding: 1em;
+    font-size: 16px;
+    text-align: center;
+    background-color: red;
+    position: absolute;
+    z-index: 10;
+    top: 14%;
+}
+ */
+
+.soldOut::before {
+    content: "Sold Out";
+    position: absolute;
+    background: red;
+    padding: 1rem;
+    border: solid 1px black;
+    border-radius: 5px;
+ }
+
+ .soldOut {
+    opacity: 60%;
+ }

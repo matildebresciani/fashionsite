@@ -39,3 +39,14 @@ dd {
     background-color: #ff8266;
 }
 
+.discounted {
+display: none;
+}
+
+.discounted p:last-child {
+    background-color: yellow;
+    width: 20%;
+    padding: 0.5em;
+}
+
+
